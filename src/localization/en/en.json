@@ -254,6 +254,73 @@
       "title": "Category"
     },
     "rate": {
+      "title": "Enter the charge per hour",
+      "placeholder": "Input a number"
+    },
+    "skills": {
+      "title": "Please, mark at least 3 skills",
+      "options": [
+        "Business analyst",
+        "Consulting",
+        "Estimate",
+        "Recruiting",
+        "SMM",
+        "Copyrighting",
+        "UI/UX",
+        "Quality control",
+        "Taxation",
+        "Coaching",
+        "Fullstack",
+        "Administration",
+        "Communication",
+        "Javascript",
+        "QA automation",
+        "ReactJS",
+        "Python",
+        "Game dev",
+        "Flutter",
+        "Node.js",
+        "DevOps",
+        "Scrum master",
+        "Agile coach",
+        "Project manager"
+      ]
+    },
+    "englishLevel": {
+      "title": "Please, choose only one level of English",
+      "options": ["Pre-Intermediate", "Intermediate", "Upper-Intermediate"]
+    },
+    "description": {
+      "title": "Write job description (Project start and end dates; description of the work you want performed; deliverables you wish to receive and deadlines if applicable; budget)",
+      "placeholder": "Description",
+      "errors": [
+        "Note! Description is required",
+        "Note! Must be more than 50 characters"
+      ]
+    },
+    "file": "Attach a file",
+    "save": "Review and save your post",
+    "post": "Now post your job",
+    "modal": "Your post has been successfully saved",
+    "validation": {
+      "title": "enter title",
+      "category": "choose category",
+      "rate": "should be greater than 0",
+      "duration": "should be greater than 0",
+      "skills": "select at least 3 options",
+      "englishLevel": "choose your english level",
+      "description": "description is required"
+    }
+  },
+  "ProfileEditForm": {
+    "formTitle": "Profile",
+    "position": {
+      "title": "Position"
+    },
+    "category": {
+      "title": "Category"
+    },
+    "rate": {
       "title": "Rate",
       "helperText": "Charge per hour"
     },
