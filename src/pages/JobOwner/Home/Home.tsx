@@ -3,12 +3,15 @@ import JobPost from "components/JobPost/Index";
 import useGoogleAuth from "hooks/useGoogleAuth";
 import useJwtDecoder from "hooks/useJwtDecoder";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { useGetHomePostsQuery } from "services/jobPosts/setJobPostsAPI";
 import { BLUE } from "utils/colorConsts";
+import { MY_JOBS_ROUTE } from "utils/routeConsts";
 import S from "./style";
 
 export default function ClientHome() {
   useGoogleAuth();
+  const navigate = useNavigate();
 
   const { sub: id } = useJwtDecoder();
   const { Title } = Typography;
@@ -37,7 +40,12 @@ export default function ClientHome() {
         <Divider />
         <S.TitleContainer>
           <Title level={4}>{t("Dashboard.titles.posts")}</Title>
-          <Button shape="round" size="large" type="primary">
+          <Button
+            onClick={() => navigate(MY_JOBS_ROUTE)}
+            shape="round"
+            size="large"
+            type="primary"
+          >
             {t("Dashboard.buttons.seePosts")}
           </Button>
         </S.TitleContainer>
@@ -61,7 +69,12 @@ export default function ClientHome() {
         <Divider />
         <S.TitleContainer>
           <Title level={4}>{t("Dashboard.titles.drafts")}</Title>
-          <Button shape="round" size="large" type="primary">
+          <Button
+            onClick={() => navigate(MY_JOBS_ROUTE)}
+            shape="round"
+            size="large"
+            type="primary"
+          >
             {t("Dashboard.buttons.seeDrafts")}
           </Button>
         </S.TitleContainer>

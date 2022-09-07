@@ -1,4 +1,4 @@
-import Chat from "pages/Chat";
+import Chat from "pages/Chat/Chat";
 import ClientHome from "pages/JobOwner/Home/Home";
 import ClientProfile from "pages/JobOwner/Profile/Profile";
 import MyContracts from "pages/MyContracts/MyContracts";
