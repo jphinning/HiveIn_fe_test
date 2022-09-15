@@ -36,7 +36,7 @@ jobs:
       
       - name: Check .env file
         run: |
-          cat .env
+          cat .env.production
         
       - name: Build container image
         run: docker build -t $(echo $REGISTRY)/$(echo $IMAGE_NAME):$(echo $GITHUB_SHA | head -c7) .
